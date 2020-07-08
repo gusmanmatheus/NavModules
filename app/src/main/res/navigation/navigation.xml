@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    app:startDestination="@id/AFragment">
+
+    <fragment
+        android:id="@+id/AFragment"
+        android:name="com.example.amodule.AFragment"
+        android:label="AFragment" >
+        <action
+            android:id="@+id/action_AFragment_to_BFragment"
+            app:destination="@id/BFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BFragment"
+        android:name="com.example.bmodule.BFragment"
+        android:label="BFragment" >
+        <argument
+            android:name="message"
+            app:argType="string"/>
+    </fragment>
+
+</navigation>
